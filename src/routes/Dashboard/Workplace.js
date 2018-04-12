@@ -20,7 +20,7 @@ export default class Workplace extends Component {
                 </div>
             </div>
         );
-        const pageHeaderExtra =(
+        const pageHeaderExtra = (
             <div className={styles.pageHeaderExtra}>
                 <div className={styles.statItem}>
                     <p>项目数</p>
@@ -37,11 +37,9 @@ export default class Workplace extends Component {
             </div>
         );
         return (
-            <PageHeader content={pageHeaderContent} extraContent={pageHeaderExtra}> 
-            这里是内容
-            </PageHeader>
-            
-            
+            <div>
+                <PageHeader content={pageHeaderContent} extraContent={pageHeaderExtra} />
+            </div >
         );
     }
 }
